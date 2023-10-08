@@ -22,6 +22,15 @@ namespace Лабораторная
             NewForm Open = new NewForm();
             Open.Show();
             this.Hide();
+            MessageBox.Show("Вы открыли первую форму!", "Успех!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form_Image open = new Form_Image();
+            open.Show();
+            this.Hide();
+            MessageBox.Show("Вы открыли вторую форму!", "Успех!", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
