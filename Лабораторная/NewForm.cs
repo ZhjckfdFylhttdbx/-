@@ -21,5 +21,10 @@ namespace Лабораторная
         {
             Application.Exit();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            labelMessage.Text = $"{textBox1.Text}";
+        }
     }
 }
