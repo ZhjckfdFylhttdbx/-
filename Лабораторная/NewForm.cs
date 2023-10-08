@@ -26,5 +26,15 @@ namespace Лабораторная
         {
             labelMessage.Text = $"{textBox1.Text}";
         }
+
+        private void buttonRed_Click(object sender, EventArgs e)
+        {
+            if (labelMessage.ForeColor == System.Drawing.Color.Red)
+            {
+                this.labelMessage.ForeColor = System.Drawing.Color.Black;
+            }
+            else  this.labelMessage.ForeColor = System.Drawing.Color.Red;
+           
+        }
     }
 }

@@ -33,6 +33,7 @@ namespace Лабораторная
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.labelMessage = new System.Windows.Forms.Label();
+            this.buttonRed = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -64,17 +65,28 @@ namespace Лабораторная
             // labelMessage
             // 
             this.labelMessage.AutoSize = true;
-            this.labelMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelMessage.Location = new System.Drawing.Point(264, 148);
+            this.labelMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelMessage.Location = new System.Drawing.Point(247, 169);
             this.labelMessage.Name = "labelMessage";
-            this.labelMessage.Size = new System.Drawing.Size(0, 33);
+            this.labelMessage.Size = new System.Drawing.Size(0, 42);
             this.labelMessage.TabIndex = 3;
+            // 
+            // buttonRed
+            // 
+            this.buttonRed.Location = new System.Drawing.Point(316, 121);
+            this.buttonRed.Name = "buttonRed";
+            this.buttonRed.Size = new System.Drawing.Size(142, 23);
+            this.buttonRed.TabIndex = 4;
+            this.buttonRed.Text = "Покрасить в красный";
+            this.buttonRed.UseVisualStyleBackColor = true;
+            this.buttonRed.Click += new System.EventHandler(this.buttonRed_Click);
             // 
             // NewForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonRed);
             this.Controls.Add(this.labelMessage);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
@@ -93,5 +105,6 @@ namespace Лабораторная
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label labelMessage;
+        private System.Windows.Forms.Button buttonRed;
     }
 }
