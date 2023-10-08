@@ -10,18 +10,16 @@ using System.Windows.Forms;
 
 namespace Лабораторная
 {
-    public partial class Form1 : Form
+    public partial class NewForm : Form
     {
-        public Form1()
+        public NewForm()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void NewForm_FormClosed(object sender, FormClosedEventArgs e)
         {
-            NewForm Open = new NewForm();
-            Open.Show();
-            this.Hide();
+            Application.Exit();
         }
     }
 }
